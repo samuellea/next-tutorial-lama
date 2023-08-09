@@ -10,24 +10,29 @@ const links = [
     url: '/',
   },
   {
-    id: 1,
+    id: 2,
     title: 'Portfolio',
     url: '/portfolio',
   },
   {
-    id: 1,
+    id: 3,
     title: 'Blog',
     url: '/blog',
   },
   {
-    id: 1,
+    id: 4,
     title: 'About',
     url: '/about',
   },
   {
-    id: 1,
-    title: 'Contact',
+    id: 5,
+    title: 'Contact', 
     url: '/contact',
+  },
+  {
+    id: 6,
+    title: 'Dashboard',
+    url: '/dashboard',
   },
 ];
 
@@ -41,7 +46,7 @@ const Navbar = () => {
             <Link href={link.url} key={link.id} className={styles.link}>{link.title}</Link>
           ))
         }
-<button className={styles.logout} onClick={()=>{console.log("logged out!")}}>Logout</button>
+      <button className={styles.logout} onClick={()=>{console.log("logged out!")}}>Logout</button>
       </div>
     </div>
   )
